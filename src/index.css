@@ -5,11 +5,11 @@ body,
 #root {
   height: 100%;
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 html{
-  scroll-behavior:smooth;
+  /* scroll-behavior:smooth; */
 }
 
 body{
