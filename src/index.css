@@ -5,6 +5,7 @@ body,
 #root {
   height: 100%;
   width: 100%;
+  overflow-x: hidden;
 }
 
 html{
@@ -13,4 +14,5 @@ html{
 
 body{
   font-family: "Inter";
+  
 }
