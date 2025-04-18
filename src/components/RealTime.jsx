@@ -9,12 +9,17 @@ const RealTime = () => {
            
         </div>
         <hr className='text-[#BEBEBE] mt-5' />
-        <div className='scrollable overflow-hidden  flex flex-col gap-3 section w-full h-[40vh]   py-2'>
+        <div className='scrollable mt-5  overflow-y-auto flex flex-col gap-5 section w-full h-[40vh]   py-2'>
             <div className='elem p-4 py-8 rounded-md bg-[#fff]' >
                 <img className='w-[12vw]' src="https://www.ayusynk.ai/wp-content/uploads/2024/07/grommet-icons_time.png" alt="" />
                 <h1 className='text-[2em] font-medium mt-4 text-[#606060]'>Advance technology</h1>
                 <p className='font-medium mt-3'>Enabling IOT healthtech/medtech devices with the latest technology. Integrating 5G, bluetooth V5.3 for faster transfer of data even in remote areas</p>
             </div>
+            <div className='elem p-4 rounded-md bg-[#fff]' >
+                <img className='w-[12vw]' src="https://www.ayusynk.ai/wp-content/uploads/2024/07/grommet-icons_time.png" alt="" />
+                <h1 className='text-[2em] font-medium mt-4 text-[#606060]'>Advance technology</h1>
+                <p className='font-medium mt-3'>Enabling IOT healthtech/medtech devices with the latest technology. Integrating 5G, bluetooth V5.3 for faster transfer of data even in remote areas</p>
+            </div> 
             <div className='elem p-4 rounded-md bg-[#fff]' >
                 <img className='w-[12vw]' src="https://www.ayusynk.ai/wp-content/uploads/2024/07/grommet-icons_time.png" alt="" />
                 <h1 className='text-[2em] font-medium mt-4 text-[#606060]'>Advance technology</h1>
