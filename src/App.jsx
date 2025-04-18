@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Enhance from './components/Enhance'
 import Sync from './components/Sync'
+import RealTime from './components/RealTime'
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
       <Hero />
       <Enhance />
       <Sync />
+      <RealTime />
 
     </div>
   )
