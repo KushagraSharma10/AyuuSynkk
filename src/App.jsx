@@ -8,10 +8,10 @@ import RealTime from './components/RealTime'
 const App = () => {
   return (
     <div className='w-full h-screen '>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Enhance />
-      <Sync />
+      <Sync /> */}
       <RealTime />
 
     </div>
