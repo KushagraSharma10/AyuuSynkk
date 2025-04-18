@@ -9,11 +9,11 @@ const Sync = () => {
 
     // Simple animation with class selectors
     gsap.to(".gsap-cards", {
-      x: () => -(document.querySelector('.gsap-cards').scrollWidth + window.innerWidth),
+      x: () => -(document.querySelector('.gsap-cards').scrollWidth - window.innerWidth),
       scrollTrigger: {
         trigger: ".gsap-section",
         start: "top top",
-        end: () => "+=" + document.querySelector('.gsap-cards').scrollWidth,
+        end: () => "+=" + (document.querySelector('.gsap-cards').scrollWidth * 0.8),
         scrub: 1,
         pin: true,
         invalidateOnRefresh: true // Responsive ke liye important
@@ -32,22 +32,22 @@ const Sync = () => {
         Sync digital technology for a superior healthcare experience
       </h1>
 
-      <div className='gsap-cards flex items-center gap-10 lg:gap-6 mt-10 lg:w-[100vw]   w-[500vw]'>
-        <div className='card w-[93vw] h-[90vw] border border-white flex items-center lg:flex-shrink-0 justify-center  rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-[35vw] lg:rounded-[1vw]'>
+      <div className='gsap-cards flex items-center gap-10 lg:gap-6 mt-10 lg:w-[100vw] w-[300vw] min-h-[80vh]'>
+        <div className='card w-[93vw] h-[90vw] border border-white flex items-center flex-shrink-0 lg:flex-shrink-0 justify-center  rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-auto lg:rounded-[1vw]'>
           <img className='w-[60vw] h-[80vw] lg:rounded-[0vw] lg:w-[37vw] lg:h-full object-cover' src="https://www.ayusynk.ai/wp-content/uploads/2024/08/st-a2.png" alt="" />
 
         </div>
-        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center lg:flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-[35vw] lg:rounded-[1vw]'>
+        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-auto lg:rounded-[1vw]'>
           <img className='w-[60vw] h-[80vw] lg:rounded-[0vw] lg:w-[37vw] lg:h-full object-cover' src="https://www.ayusynk.ai/wp-content/uploads/2024/08/st-a2.png" alt="" />
           
         </div>
-        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center lg:flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-[35vw] lg:rounded-[1vw]'>
+        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-auto lg:rounded-[1vw]'>
           <img className='w-[60vw] h-[80vw] lg:rounded-[0vw] lg:w-[37vw] lg:h-full object-cover' src="https://www.ayusynk.ai/wp-content/uploads/2024/08/st-a2.png" alt="" />
         </div>
-        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center lg:flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-[35vw] lg:rounded-[1vw]'>
+        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-auto lg:rounded-[1vw]'>
           <img className='w-[60vw] h-[80vw] lg:rounded-[0vw] lg:w-[37vw] lg:h-full object-cover' src="https://www.ayusynk.ai/wp-content/uploads/2024/08/st-a2.png" alt="" />
         </div>
-        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center lg:flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-[35vw] lg:rounded-[1vw]'>
+        <div className='card w-[93vw] h-[90vw] border border-white flex items-center justify-center flex-shrink-0 rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-auto lg:rounded-[1vw]'>
           <img className='w-[60vw] h-[80vw] lg:rounded-[0vw] lg:w-[37vw] lg:h-full object-cover' src="https://www.ayusynk.ai/wp-content/uploads/2024/08/st-a2.png" alt="" />
         </div>
       </div>

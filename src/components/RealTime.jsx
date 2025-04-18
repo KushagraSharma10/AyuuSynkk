@@ -2,7 +2,7 @@ import React from 'react'
 
 const RealTime = () => {
   return (
-    <div>RealTime</div>
+    <div className='bg-red-600'>RealTime</div>
   )
 }
 
