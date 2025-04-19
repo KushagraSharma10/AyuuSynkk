@@ -10,12 +10,12 @@ import Marquee from './components/Marquee'
 const App = () => {
   return (
     <div className='w-full h-screen '>
-      <Navbar />
+      {/* <Navbar />
       <Hero />
       <Enhance />
       <Sync />
       <RealTime />
-      <Testimonial />
+      <Testimonial /> */}
       <Marquee />
     </div>
   )
