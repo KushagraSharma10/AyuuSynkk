@@ -5,6 +5,7 @@ import Enhance from './components/Enhance'
 import Sync from './components/Sync'
 import RealTime from './components/RealTime'
 import Testimonial from './components/Testimonial'
+import Marquee from './components/Marquee'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Sync />
       <RealTime />
       <Testimonial />
+      <Marquee />
     </div>
   )
 }
