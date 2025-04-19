@@ -187,40 +187,41 @@ const testimonials = [
   },
   {
     id: 2,
-    name: "Dr. Priya Sharma",
-    role: "Cardiologist, Delhi",
+    name: "Dr. Somesh Mehotra",
+    role: "Critical Care Physician, Uttar Pradesh",
     content:
-      "The AyuSynk stethoscope has revolutionized how I examine my patients. The sound clarity is exceptional and the ability to record and share auscultations with colleagues has improved our diagnostic accuracy significantly.",
+      "“It’s so hard to believe that AyuSynk is an Indian product, the first model made examining COVID patients possible, and the stethoscope came even before littman and at a miniscule of the cost best part is the professionalism with which the team responds to queries and complaint, my instrument was upgraded free of cost when charging had an issue the AyuSynk is a sign that India has come if age”",
   },
   {
     id: 3,
-    name: "Dr. Rajesh Patel",
-    role: "Pediatrician, Mumbai",
+    name: "Dr. Venkataraman Srivatsan",
+    role: "Anesthesiologist, Chennai",
     content:
-      "As a pediatrician, I often deal with anxious parents. With AyuSynk, I can now show them exactly what I'm hearing in their child's chest. This visual confirmation has dramatically improved parent-doctor trust in my practice.",
+      "“Dear sir I have purchased anesthesiologist AyuSynk and used it. I am an aged 76 years old wearing hearing aids. Excellent product to use for hearing impaired directly as stethoscope or with over the ear headphone either with Ayu cable or Bluetooth. But very difficult to hear with the wired ear buds which comes with the instrument even for a person with normal hearing, with mobile particularly with OnePlus Nord. But can be heard with the wired buds in the tablet or pad. Is there a solution for this issue. Thanks a lot. You can confidently promote for hearing impaired person. kudos to you engineers.”",
   },
   {
     id: 4,
-    name: "Dr. Ananya Gupta",
-    role: "Pulmonologist, Bangalore",
+    name: "Dr. Pranay Bandgar",
+    role: "Mumbai",
     content:
-      "The noise cancellation feature in AyuSynk is a game-changer for busy hospital environments. I can now hear subtle lung sounds clearly even in noisy wards. The battery life is impressive too - lasts through my entire shift.",
+      "“Hi I am Dr.Pranay Bandgar M.D (Medicine), currently working as Assistant Professor in GGMC and Sir J J Group of hospitals, Mumbai. I’ve been using AyuSynk Stethoscope almost since last 2.5- 3 years. Currently I am using AyuSynk 2. The software as well as Hardware is excellently upgraded. I am very much happy with the product’s quality and cost at which it is being provided. It’s not only excellent for MBBS/AYUSH students for understanding heart and lung sounds from the basics but also for all practicing doctors.”",
   },
   {
     id: 5,
-    name: "Dr. Vikram Singh",
-    role: "Medical Professor, Chennai",
+    name: "Dr. Arun Mahale",
+    role: "Pune",
     content:
-      "I've incorporated AyuSynk into my medical teaching curriculum. Students can now hear what I hear during demonstrations, and we can save interesting cases for future reference. It's transformed how I teach auscultation.",
+      "“AyuSynk with Ayushare App is a tubeless medical device for auscultation. It is an useful equipment making auscultation possible without using ear pieces of stethoscope. This enables auscultation to be done from safe distance in situations where it is necessary. Features of amplify the sound, recording ( both sound and graphical) and creating a report are wonderful. For young doctors who are comfortable with newer technology it can be an asset.”",
   },
 ];
 
 const Testimonial = () => {
   return (
     <div className="w-full lg:px-[5vw] overflow-hidden py-10 bg-[#EAEAEA]">
-      <div className="w-[90vw] lg:w-[120vw] lg:p-2 lg:px-5 lg: bg-red-300 lg:mx-[-5vw] mx-auto   overflow-hidden">
+      <div className="w-[90vw] lg:w-[120vw] lg:p-2 lg:px-5  lg:flex lg:items-center lg:mx-[-5vw] mx-auto overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination]}
+          spaceBetween={1}
           slidesPerView={1}
           loop={true}
           autoplay={{
@@ -236,14 +237,14 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="w-full lg:w-[96vw] flex-shrink-0 px-2">
-                <div className="h-[80vh] lg:h-[70vh] px-5 py-10 rounded-md lg:rounded-[3vw] bg-[#F2F2F2] flex flex-col items-center gap-3">
-                  <h1 className="text-[1.3em] font-semibold">Testimonial</h1>
-                  <p className="text-[1em] font-medium text-center">
+              <div className="w-full lg:w-[96vw] flex-shrink-0  px-1">
+                <div className="h-[80vh] lg:h-[70vh] px-5 py-10 rounded-lg lg:rounded-[4vw] lg:px-50 bg-[#F2F2F2] flex flex-col items-center gap-5">
+                  <h1 className="text-[1.3em] font-semibold lg:text-[1.5em]">Testimonial</h1>
+                  <p className="text-[1em] font-medium text-center lg:mt-5 lg:text-[1.5em]">
                     "{testimonial.content}"
                   </p>
                   <div className="text-center mt-3">
-                    <p className="font-semibold">{testimonial.name}</p>
+                    <p className="">{testimonial.name}</p>
                     <p>{testimonial.role}</p>
                   </div>
                 </div>
