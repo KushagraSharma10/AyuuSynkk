@@ -126,6 +126,7 @@ import React, { useState } from "react";
 
 const RealTime = () => {
   const [activeContent, setActiveContent] = useState(0);
+  
 
   // Data for all content (headings + details)
   const contentData = [
@@ -167,7 +168,7 @@ const RealTime = () => {
   ];
 
   return (
-    <div className="bg-[#EAEAEA] px-3 py-11 lg:px-[5vw]">
+    <div className="bg-[#EAEAEA] px-3 py-20 lg:px-[5vw]">
       <div className="Text-Area lg:flex lg:items-center lg:gap-[15vw]">
         <h1 className="text-[1.55em] lg:text-[2.4em] font-bold leading-8 lg:w-[30vw] lg:leading-13">
           Real-Time monitoring for enhanced diagnostics.
@@ -180,7 +181,7 @@ const RealTime = () => {
           capturing of physiological signals and web streaming of vital signs.
         </p>
       </div>
-      <hr className="text-[#BEBEBE] mt-5" />
+      <hr className="text-[#BEBEBE] mt-10" />
       <div className="scroll-main lg:mt-10 lg:flex lg:justify-between">
         {/* LEFT SIDE (HEADINGS - LAPTOP ONLY) */}
         <div className="left hidden lg:block lg:w-[35vw] bg-transparent lg:h-[70vh] overflow-y-auto lg:p-1 scrollbar-hide">
@@ -199,11 +200,8 @@ const RealTime = () => {
 
         {/* RIGHT SIDE (CONTENT - LAPTOP ONLY) */}
         <div className="right hidden w-[45vw] p-10 lg:flex lg:flex-col justify-center items-start bg-transparent">
-          <img
-            className="w-[7vw]"
-            src={contentData[activeContent].img}
-            alt=""
-          />
+        <div key={activeContent} className="transition-opacity duration-300 animate-fadeIn">
+          <img className="w-[7vw]" src={contentData[activeContent].img} alt="" />
           <h1 className="text-[3em] font-medium mt-4 text-[#606060]">
             {contentData[activeContent].title}
           </h1>
@@ -211,6 +209,7 @@ const RealTime = () => {
             {contentData[activeContent].desc}
           </p>
         </div>
+      </div>
 
         {/* MOBILE VIEW (ALL CONTENT STACKED) */}
         <div className="lg:hidden scrollable mt-5 overflow-y-auto flex flex-col gap-5 section w-full h-[40vh] py-2">
