@@ -17,22 +17,29 @@ const RealTime = () => {
       </div>
       <hr className="text-[#BEBEBE] mt-5" />
       <div className="scroll-main lg:mt-10 lg:flex lg:gap-5">
-        <div className="hidden lg:flex lg:flex-col lg:gap-3 lg:w-[35vw] bg-red-400 lg:h-[70vh] lg:overflow-y-auto lg:p-1 ">
-            <div className="list w-full flex items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+        <div className="left hidden lg:block  lg:w-[35vw] bg-red-400 lg:h-[70vh] lg:overflow-y-auto lg:p-1 ">
+            <div className="list w-full flex lg:mt-2 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
             </div>
-            <div className="list w-full flex items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+            <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
             </div>
-            <div className="list w-full flex items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+            <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
             </div>
-            <div className="list w-full flex items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+            <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
             </div>
-            <div className="list w-full flex items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+            <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
             </div>
+            <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+                <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
+            </div>
+            
+
+        </div>
+        <div className="right">
 
         </div>
         <div className="lg:hidden scrollable mt-5  overflow-y-auto flex flex-col gap-5 section w-full h-[40vh]   py-2">
