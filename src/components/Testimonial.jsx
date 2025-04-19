@@ -230,6 +230,7 @@ const Testimonial = () => {
           pagination={{
             clickable: true,
             el: ".swiper-custom-pagination",
+            modifierClass: "custom-pagination-",
           }}
           speed={700}
         >
@@ -245,16 +246,15 @@ const Testimonial = () => {
                     <p className="font-semibold">{testimonial.name}</p>
                     <p>{testimonial.role}</p>
                   </div>
-                 
                 </div>
-                
               </div>
             </SwiperSlide>
           ))}
+           <div className="hidden lg:flex absolute bottom-8 left-[48vw] -translate-x-1/2 z-10 space-x-2 swiper-custom-pagination"></div>
         </Swiper>
 
         {/* Dots Pagination (Visible only on laptop) */}
-        <div className="hidden lg:flex justify-center mt-6 space-x-2 swiper-custom-pagination"></div>
+        {/* <div className="hidden lg:flex justify-center  mt-6 space-x-2 swiper-custom-pagination"></div> */}
       </div>
     </div>
   );

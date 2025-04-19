@@ -36,3 +36,17 @@ body{
 .animate-fadeIn {
   animation: fadeIn 0.3s ease-in-out;
 }
+
+.custom-pagination- .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(0,0,0,0.2);
+  background-color: black;
+  transition: all 0.3s;
+}
+
+.custom-pagination- .swiper-pagination-bullet-active {
+  background: black;
+  background-color: black;  
+  transform: scale(1.2);
+}
