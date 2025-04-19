@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import Enhance from './components/Enhance'
 import Sync from './components/Sync'
 import RealTime from './components/RealTime'
+import Testimonial from './components/Testimonial'
 
 const App = () => {
   return (
@@ -13,7 +14,7 @@ const App = () => {
       <Enhance />
       <Sync />
       <RealTime />
-
+      <Testimonial />
     </div>
   )
 }

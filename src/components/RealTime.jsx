@@ -4,7 +4,7 @@
 
 //     // const handleClick = () =>{
 //     //     const list = document.querySelector('.list');
-        
+
 //     //         list.style.backgroundColor = "#3271C3";
 //     //         list.style.color = "white";
 //     // }
@@ -27,8 +27,7 @@
 //       </div>
 //       <hr className="text-[#BEBEBE] mt-5" />
 //       <div className="scroll-main lg:mt-10 lg:flex lg:justify-between">
-        
-        
+
 //         <div className="left hidden lg:block  lg:w-[35vw] bg-transparent hover:overflow-auto lg:h-[70vh] overflow-y-hidden lg:p-1 ">
 //             <div className="list w-full flex lg:mt-2 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh] "
 //             >
@@ -49,7 +48,6 @@
 //             <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
 //                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
 //             </div>
-            
 
 //         </div>
 
@@ -126,7 +124,6 @@ import React, { useState } from "react";
 
 const RealTime = () => {
   const [activeContent, setActiveContent] = useState(0);
-  
 
   // Data for all content (headings + details)
   const contentData = [
@@ -183,33 +180,45 @@ const RealTime = () => {
       </div>
       <hr className="text-[#BEBEBE] mt-10" />
       <div className="scroll-main lg:mt-10 lg:flex lg:justify-between">
+        
         {/* LEFT SIDE (HEADINGS - LAPTOP ONLY) */}
-        <div className="left hidden lg:block lg:w-[35vw] bg-transparent lg:h-[70vh] overflow-y-auto lg:p-1 scrollbar-hide">
-  {contentData.map((item, index) => (
-    <div
-      key={index}
-      className={`list w-full flex ${index === 0 ? "lg:mt-2" : "lg:mt-5"} items-center justify-center border border-[#D6D6D6] rounded-[2vw] ${
-        activeContent === index ? "bg-[#3271C3] text-white" : "bg-transparent text-[#606060]"
-      } h-[15vh] cursor-pointer`}
-      onClick={() => setActiveContent(index)}
-    >
-      <h1 className="text-[2.4em] font-medium">{item.title}</h1>
-    </div>
-  ))}
-</div>
+        <div className="left hidden lg:block lg:w-[35vw] bg-transparent lg:h-[60vh] overflow-y-auto lg:p-1 scrollbar-hide">
+          {contentData.map((item, index) => (
+            <div
+              key={index}
+              className={`list w-full flex ${
+                index === 0 ? "lg:mt-2" : "lg:mt-5"
+              } items-center justify-center border border-[#D6D6D6] rounded-[2vw] ${
+                activeContent === index
+                  ? "bg-[#3271C3] text-white"
+                  : "bg-transparent text-[#606060]"
+              } h-[15vh] cursor-pointer`}
+              onClick={() => setActiveContent(index)}
+            >
+              <h1 className="text-[2.4em] font-medium">{item.title}</h1>
+            </div>
+          ))}
+        </div>
 
         {/* RIGHT SIDE (CONTENT - LAPTOP ONLY) */}
         <div className="right hidden w-[45vw] p-10 lg:flex lg:flex-col justify-center items-start bg-transparent">
-        <div key={activeContent} className="transition-opacity duration-300 animate-fadeIn">
-          <img className="w-[7vw]" src={contentData[activeContent].img} alt="" />
-          <h1 className="text-[3em] font-medium mt-4 text-[#606060]">
-            {contentData[activeContent].title}
-          </h1>
-          <p className="text-[1.1em] font-medium mt-3">
-            {contentData[activeContent].desc}
-          </p>
+          <div
+            key={activeContent}
+            className="transition-opacity duration-300 animate-fadeIn"
+          >
+            <img
+              className="w-[7vw]"
+              src={contentData[activeContent].img}
+              alt=""
+            />
+            <h1 className="text-[3em] font-medium mt-4 text-[#606060]">
+              {contentData[activeContent].title}
+            </h1>
+            <p className="text-[1.1em] font-medium mt-3">
+              {contentData[activeContent].desc}
+            </p>
+          </div>
         </div>
-      </div>
 
         {/* MOBILE VIEW (ALL CONTENT STACKED) */}
         <div className="lg:hidden scrollable mt-5 overflow-y-auto flex flex-col gap-5 section w-full h-[40vh] py-2">
