@@ -1,6 +1,14 @@
 import React from "react";
 
 const RealTime = () => {
+
+    // const handleClick = () =>{
+    //     const list = document.querySelector('.list');
+        
+    //         list.style.backgroundColor = "#3271C3";
+    //         list.style.color = "white";
+    // }
+
   return (
     <div className="bg-[#EAEAEA] px-3 py-11 lg:px-[5vw]">
       <div className="Text-Area lg:flex lg:items-center lg:gap-[15vw]">
@@ -16,9 +24,12 @@ const RealTime = () => {
         </p>
       </div>
       <hr className="text-[#BEBEBE] mt-5" />
-      <div className="scroll-main lg:mt-10 lg:flex lg:gap-5">
-        <div className="left hidden lg:block  lg:w-[35vw] bg-red-400 lg:h-[70vh] lg:overflow-y-auto lg:p-1 ">
-            <div className="list w-full flex lg:mt-2 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
+      <div className="scroll-main lg:mt-10 lg:flex lg:justify-between">
+        
+        
+        <div className="left hidden lg:block  lg:w-[35vw] bg-transparent hover:overflow-auto lg:h-[70vh] overflow-y-hidden lg:p-1 ">
+            <div className="list w-full flex lg:mt-2 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh] "
+            >
                 <h1 className="text-[2em] font-medium text-[#606060] " >Advance Technology </h1>
             </div>
             <div className="list w-full flex lg:mt-5 items-center justify-center border border-[#D6D6D6] rounded-[2vw] bg-transparent h-[19vh]">
@@ -39,10 +50,24 @@ const RealTime = () => {
             
 
         </div>
-        <div className="right">
 
+        <div className="right hidden  w-[45vw] p-10 lg:flex lg:flex-col justify-center  items-start bg-transparent ">
+        <img
+              className="w-[7vw]"
+              src="https://www.ayusynk.ai/wp-content/uploads/2024/07/grommet-icons_time.png"
+              alt=""
+            />
+            <h1 className="text-[3em] font-medium mt-4 text-[#606060]">
+              Advance technology
+            </h1>
+            <p className="text-[1.1em] font-medium mt-3">
+              Enabling IOT healthtech/medtech devices with the latest
+              technology. Integrating 5G, bluetooth V5.3 for faster transfer of
+              data even in remote areas
+            </p>
         </div>
-        <div className="lg:hidden scrollable mt-5  overflow-y-auto flex flex-col gap-5 section w-full h-[40vh]   py-2">
+
+        <div className="lg:hidden scrollable mt-5  overflow-y-auto flex flex-col gap-5 section w-full h-[40vh] py-2">
           <div className="elem p-4 py-8 rounded-md bg-[#fff]">
             <img
               className="w-[12vw]"
