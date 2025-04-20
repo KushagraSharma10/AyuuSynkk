@@ -14,8 +14,8 @@ const Marquee = () => {
       const duplicatedImages = [...images, ...images]; 
 
   return (
-    <div className="w-full p-4 py-10 lg:py-17 overflow-hidden bg-[#1367D5]">
-      <h1 className="text-[1.6em] text-center text-white">
+    <div className="w-full p-4 py-10 lg:py-17 md:py-18 overflow-hidden bg-[#1367D5]">
+      <h1 className="text-[1.6em] md:text-[2.6em] text-center text-white">
         Trusted by health care partners
       </h1>
       <div className="marquee flex items-center gap-[1vw] w-[500vw] lg:w-[100vw] mt-5 animate-marquee">
