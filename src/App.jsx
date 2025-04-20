@@ -7,6 +7,7 @@ import RealTime from './components/RealTime'
 import Testimonial from './components/Testimonial'
 import Marquee from './components/Marquee'
 import Demo from './components/Demo'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Testimonial />
       <Marquee />
       <Demo />
+      <Footer/>
     </div>
   )
 }
