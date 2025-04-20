@@ -50,14 +50,14 @@ const Demo = () => {
           </a>
         </div>
       </div>
-      <div className="p-5 py-20 lg:py-13 bg-[#141414] mt-10 lg:pl-20 rounded-[8vw] lg:gap-20 border-r-2 lg:flex lg:items-center  border-[#585858]">
+      <div className="p-5 py-20 lg:py-13 bg-[#141414] mt-10  lg:pl-20 rounded-[8vw] lg:gap-20 border-r-2 md:flex md:py-7 md:gap-20 lg:flex lg:items-center border-[#585858]">
         <h1 className="text-white text-center mb-8 font-semibold lg:mb-0">
           We are proudly supported by
         </h1>
-        <div className="flex flex-wrap lg:flex-nowrap justify-center gap-y-20  lg:mt-0 mt-15 lg:gap-21 gap-x-8">
+        <div className="flex flex-wrap md:flex-nowrap md:mt-0 lg:flex-nowrap justify-center gap-y-20  lg:mt-0 mt-15 lg:gap-21 gap-x-8">
           <div className="w-[45%] flex justify-center">
             <img
-              className="w-[70%] lg:w-[110%] max-w-[200px]"
+              className="w-[70%] md:w-[90%] lg:w-[110%] max-w-[200px]"
               src="https://www.ayusynk.ai/wp-content/uploads/2024/08/Group-5.png"
               alt=""
             />
@@ -65,7 +65,7 @@ const Demo = () => {
 
           <div className="w-[45%] flex justify-center">
             <img
-              className="w-[70%] lg:w-[110%] max-w-[200px]"
+              className="w-[70%] md:w-[90%] lg:w-[110%] max-w-[200px]"
               src="https://www.ayusynk.ai/wp-content/uploads/2024/07/renc-1.png"
               alt=""
             />
@@ -74,7 +74,7 @@ const Demo = () => {
           {/* Doosri Row (2 items) */}
           <div className="w-[45%]  flex justify-center">
             <img
-              className="w-[70%] lg:w-[110%] max-w-[200px]"
+              className="w-[70%] md:w-[90%] lg:w-[110%] max-w-[200px]"
               src="https://www.ayusynk.ai/wp-content/uploads/2024/07/renc-1.png"
               alt=""
             />
@@ -82,7 +82,7 @@ const Demo = () => {
 
           <div className="w-[45%] flex justify-center">
             <img
-              className="w-[50%] lg:w-[60%] max-w-[150px]"
+              className="w-[50%] md:w-[55%] lg:w-[60%] max-w-[150px]"
               src="https://www.ayusynk.ai/wp-content/uploads/2024/07/sine-1.png"
               alt=""
             />
