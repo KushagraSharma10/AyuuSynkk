@@ -32,7 +32,7 @@ const Sync = () => {
         Sync digital technology for a superior healthcare experience
       </h1>
 
-      <div className='gsap-cards flex items-center gap-10 lg:gap-6 mt-10 lg:w-[100vw]   w-[500vw]'>
+      <div className='gsap-cards flex items-center gap-10 lg:gap-15 lg:px-14  mt-10 lg:w-[100vw]  w-[500vw]'>
         <div className='card w-[93vw] h-[90vw] border border-white flex items-center flex-shrink-0 justify-center  rounded-[3vw] border-none bg-[#1263CD] lg:w-[28vw] lg:h-[35vw] lg:rounded-[1vw]'>
           <img className='w-[60vw] h-[80vw] lg:rounded-[0vw] lg:w-[37vw] lg:h-full object-cover' src="https://www.ayusynk.ai/wp-content/uploads/2024/08/st-a2.png" alt="" />
 
