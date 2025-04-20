@@ -165,8 +165,8 @@ const RealTime = () => {
 
   return (
     <div className="bg-[#EAEAEA] px-3 py-20 md:px-[5vw] lg:px-[5vw]">
-      <div className="Text-Area md:flex  md:gap-[10vw] md:justify-between  lg:flex lg:items-center lg:gap-[15vw]">
-        <h1 className="text-[1.55em] lg:text-[2.4em] md:text-[2.3em] md:leading-12 font-bold leading-8 bg-red-400 md:w-[40vw]  lg:w-[30vw] lg:leading-13">
+      <div className="Text-Area md:flex  md:gap-[18vw]   lg:flex lg:items-center lg:gap-[15vw]">
+        <h1 className="text-[1.55em] lg:text-[2.4em] md:text-[2.3em] md:leading-12 font-bold leading-8 md:w-[40vw]  lg:w-[30vw] lg:leading-13">
           Real-Time monitoring for enhanced diagnostics.
         </h1>
         <p className="font-medium pt-2 leading-[6vw] md:leading-[3.3vw] md:text-[1.1em] lg:leading-[1.5vw] lg:w-[40vw] lg:text-[1.1em]">
@@ -178,49 +178,46 @@ const RealTime = () => {
         </p>
       </div>
       <hr className="text-[#BEBEBE] mt-10" />
-      <div className="scroll-main lg:mt-10 lg:flex lg:justify-between">
+      <div className="scroll-main lg:mt-10 md:flex md:justify-between lg:flex lg:justify-between">
         
-        {/* LEFT SIDE (HEADINGS - LAPTOP ONLY) */}
-        <div className="left hidden lg:block lg:w-[35vw] bg-transparent lg:h-[60vh] overflow-y-auto lg:p-1 scrollbar-hide">
+        <div className="left hidden md:block md:w-[40vw] md-transparent md:h-[60vh] md:p-1 md:mt-10 lg:block lg:w-[35vw] bg-transparent lg:h-[60vh] overflow-y-auto lg:p-1 scrollbar-hide">
           {contentData.map((item, index) => (
             <div
               key={index}
               className={`list w-full flex ${
-                index === 0 ? "lg:mt-2" : "lg:mt-5"
+                index === 0 ? "lg:mt-2 md:mt-2" : "lg:mt-5 md:mt-5"
               } items-center justify-center border border-[#D6D6D6] rounded-[2vw] ${
                 activeContent === index
                   ? "bg-[#3271C3] text-white"
                   : "bg-transparent text-[#606060]"
-              } h-[15vh] cursor-pointer`}
+              } h-[15vh] md:h-[8vh] cursor-pointer`}
               onClick={() => setActiveContent(index)}
             >
-              <h1 className="text-[2.4em] font-medium">{item.title}</h1>
+              <h1 className="text-[2.4em] md:text-[1.4em] md:font-medium font-medium">{item.title}</h1>
             </div>
           ))}
         </div>
 
-        {/* RIGHT SIDE (CONTENT - LAPTOP ONLY) */}
-        <div className="right hidden w-[45vw] p-10 lg:flex lg:flex-col justify-center items-start bg-transparent">
+        <div className="right hidden md:flex md:flex-col  w-[45vw] md:w-[50vw] p-10 lg:flex lg:flex-col justify-center items-start bg-transparent">
           <div
             key={activeContent}
             className="transition-opacity duration-300 animate-fadeIn"
           >
             <img
-              className="w-[7vw]"
+              className="w-[7vw] md:w-[10vw]"
               src={contentData[activeContent].img}
               alt=""
             />
-            <h1 className="text-[3em] font-medium mt-4 text-[#606060]">
+            <h1 className="text-[3em] md:text-[2em] md:whitespace-nowrap font-medium mt-4 text-[#606060]">
               {contentData[activeContent].title}
             </h1>
-            <p className="text-[1.1em] font-medium mt-3">
+            <p className="text-[1.1em] md:text-[1em] md:font-medium md:text-start font-medium mt-3">
               {contentData[activeContent].desc}
             </p>
           </div>
         </div>
 
-        {/* MOBILE VIEW (ALL CONTENT STACKED) */}
-        <div className="lg:hidden scrollable mt-5 overflow-y-auto flex flex-col gap-5 section w-full h-[40vh] py-2">
+        <div className="lg:hidden md:hidden scrollable mt-5 overflow-y-auto flex flex-col gap-5 section w-full h-[40vh] py-2">
           {contentData.map((item, index) => (
             <div key={index} className="elem p-4 py-8 rounded-md bg-[#fff]">
               <img className="w-[12vw]" src={item.img} alt="" />
