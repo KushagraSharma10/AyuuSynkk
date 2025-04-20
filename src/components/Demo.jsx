@@ -31,7 +31,7 @@ const Demo = () => {
             src="https://www.ayusynk.ai/wp-content/uploads/2024/07/t-logo.png"
             alt=""
           />
-          <h2 className="lg:text-[2.2em] lg:font-medium text-[#E0E0E0]">
+          <h2 className="lg:text-[2.2em] md:text-[2.2em] lg:font-medium text-[#E0E0E0]">
             Get in touch with us today!
           </h2>
         </div>
