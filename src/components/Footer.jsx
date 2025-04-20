@@ -131,9 +131,9 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <div className='flex lg:flex-col lg:items-start items-center justify-between gap-4 mt-13'>
+        <div className='flex lg:flex-col lg:items-start md:justify-start md:gap-10 items-center justify-between gap-4 mt-13'>
           {appStoreLinks.map(({ href, src }, idx) => (
-            <a key={idx} className='w-[45vw] lg:w-[10vw]' href={href}>
+            <a key={idx} className='w-[45vw] md:w-[30vw] lg:w-[10vw]' href={href}>
               <img className='w-full' src={src} alt='' />
             </a>
           ))}
