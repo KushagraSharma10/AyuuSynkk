@@ -125,7 +125,6 @@ import React, { useState } from "react";
 const RealTime = () => {
   const [activeContent, setActiveContent] = useState(0);
 
-  // Data for all content (headings + details)
   const contentData = [
     {
       title: "Advance Technology",
@@ -165,12 +164,12 @@ const RealTime = () => {
   ];
 
   return (
-    <div className="bg-[#EAEAEA] px-3 py-20 lg:px-[5vw]">
-      <div className="Text-Area lg:flex lg:items-center lg:gap-[15vw]">
-        <h1 className="text-[1.55em] lg:text-[2.4em] font-bold leading-8 lg:w-[30vw] lg:leading-13">
+    <div className="bg-[#EAEAEA] px-3 py-20 md:px-[5vw] lg:px-[5vw]">
+      <div className="Text-Area md:flex  md:gap-[10vw] md:justify-between  lg:flex lg:items-center lg:gap-[15vw]">
+        <h1 className="text-[1.55em] lg:text-[2.4em] md:text-[2.3em] md:leading-12 font-bold leading-8 bg-red-400 md:w-[40vw]  lg:w-[30vw] lg:leading-13">
           Real-Time monitoring for enhanced diagnostics.
         </h1>
-        <p className="font-medium pt-2 leading-[6vw] lg:leading-[1.5vw] lg:w-[40vw] lg:text-[1.1em]">
+        <p className="font-medium pt-2 leading-[6vw] md:leading-[3.3vw] md:text-[1.1em] lg:leading-[1.5vw] lg:w-[40vw] lg:text-[1.1em]">
           The unified ayu dashboard ecosystem provides access to real-time
           monitoring data. The technology is designed to provide with dedicated
           filter for clarity, precision and accuracy. AyuSynk features one tap
