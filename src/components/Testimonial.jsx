@@ -217,8 +217,8 @@ const testimonials = [
 
 const Testimonial = () => {
   return (
-    <div className="w-full lg:px-[5vw] overflow-hidden py-10 bg-[#EAEAEA]">
-      <div className="w-[90vw] lg:w-[120vw] lg:p-2 lg:px-5  lg:flex lg:items-center lg:mx-[-5vw] mx-auto overflow-hidden">
+    <div className="w-full md:px-[5vw] lg:px-[5vw] overflow-hidden py-10 bg-[#EAEAEA]">
+      <div className="w-[90vw] md:w-[120vw] lg:w-[120vw] lg:p-2 lg:px-5 lg:flex lg:items-center md:mx-[-2vw] lg:mx-[-5vw] mx-auto overflow-hidden">
         <Swiper
           modules={[Autoplay, Pagination]}
           spaceBetween={1}
@@ -237,10 +237,10 @@ const Testimonial = () => {
         >
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
-              <div className="w-full lg:w-[96vw] flex-shrink-0  px-1">
-                <div className="h-[80vh] lg:h-[70vh] px-5 py-10 rounded-lg lg:rounded-[4vw] lg:px-50 bg-[#F2F2F2] flex flex-col items-center gap-5">
+              <div className="w-full lg:w-[96vw] md:w-[96vw] flex-shrink-0  px-1">
+                <div className="h-[80vh] lg:h-[70vh] md:h-[70vh] px-5 py-10 md:rounded-[5vw] rounded-lg lg:rounded-[4vw] lg:px-50 bg-[#F2F2F2] flex flex-col items-center gap-5">
                   <h1 className="text-[1.3em] font-semibold lg:text-[1.5em]">Testimonial</h1>
-                  <p className="text-[1em] font-medium text-center lg:mt-5 lg:text-[1.5em]">
+                  <p className="text-[1em] font-medium text-center md:text-[1.5em] lg:mt-5 lg:text-[1.5em]">
                     "{testimonial.content}"
                   </p>
                   <div className="text-center mt-3">
@@ -251,11 +251,9 @@ const Testimonial = () => {
               </div>
             </SwiperSlide>
           ))}
-           <div className="hidden lg:flex absolute bottom-8 left-[48vw] -translate-x-1/2 z-10 space-x-2 swiper-custom-pagination"></div>
+           <div className="hidden md:flex lg:flex absolute bottom-8 left-[48vw] -translate-x-1/2 z-10 space-x-2 swiper-custom-pagination"></div>
         </Swiper>
 
-        {/* Dots Pagination (Visible only on laptop) */}
-        {/* <div className="hidden lg:flex justify-center  mt-6 space-x-2 swiper-custom-pagination"></div> */}
       </div>
     </div>
   );
