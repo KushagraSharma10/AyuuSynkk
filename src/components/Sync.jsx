@@ -1,30 +1,30 @@
 import React, { useEffect } from 'react'
-// import gsap from 'gsap'
-// import { ScrollTrigger } from 'gsap/ScrollTrigger'
+import gsap from 'gsap'
+import { ScrollTrigger } from 'gsap/ScrollTrigger'
 
 const Sync = () => {
 
-  // useEffect(() => {
-  //   gsap.registerPlugin(ScrollTrigger)
+  useEffect(() => {
+    gsap.registerPlugin(ScrollTrigger)
 
-  //   // Simple animation with class selectors
-  //   gsap.to(".gsap-cards", {
-  //     x: () => -(document.querySelector('.gsap-cards').scrollWidth + window.innerWidth),
-  //     scrollTrigger: {
-  //       trigger: ".gsap-section",
-  //       start: "top top",
-  //       end: () => "+=" + document.querySelector('.gsap-cards').scrollWidth,
-  //       scrub: 1,
-  //       pin: true,
-  //       invalidateOnRefresh: true // Responsive ke liye important
-  //     }
-  //   })
+    // Simple animation with class selectors
+    gsap.to(".gsap-cards", {
+      x: () => -(document.querySelector('.gsap-cards').scrollWidth + window.innerWidth),
+      scrollTrigger: {
+        trigger: ".gsap-section",
+        start: "top top",
+        end: () => "+=" + document.querySelector('.gsap-cards').scrollWidth,
+        scrub: 1,
+        pin: true,
+        invalidateOnRefresh: true // Responsive ke liye important
+      }
+    })
 
-  //   // Cleanup
-  //   return () => {
-  //     ScrollTrigger.getAll().forEach(trigger => trigger.kill())
-  //   }
-  // }, [])
+    // Cleanup
+    return () => {
+      ScrollTrigger.getAll().forEach(trigger => trigger.kill())
+    }
+  }, [])
 
   return (
     <div className='gsap-section w-full px-4 lg:px-[5vw] py-10 lg:py-15 bg-black overflow-x-hidden'>
