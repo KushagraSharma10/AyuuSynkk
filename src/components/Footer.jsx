@@ -66,11 +66,11 @@ import {
 } from 'react-icons/fa6'
 
 const socialIcons = [
-  { icon: <FaYoutube className='text-[1.3em]' />, href: '' },
-  { icon: <FaLinkedin className='text-[1.3em]' />, href: '' },
-  { icon: <FaFacebook className='text-[1.3em]' />, href: '' },
-  { icon: <FaInstagram className='text-[1.3em]' />, href: '' },
-  { icon: <FaTwitter className='text-[1.3em]' />, href: '' },
+  { icon: <FaYoutube className='text-[1.1em]' />, href: '' },
+  { icon: <FaLinkedin className='text-[1.1em]' />, href: '' },
+  { icon: <FaFacebook className='text-[1.1em]' />, href: '' },
+  { icon: <FaInstagram className='text-[1.1em]' />, href: '' },
+  { icon: <FaTwitter className='text-[1.1em]' />, href: '' },
 ]
 
 const appStoreLinks = [
@@ -120,13 +120,13 @@ const footerSections = [
 
 const Footer = () => {
   return (
-    <div className='bg-black py-10 lg: px-4 lg:px-[7vw] lg:mt[vw] text-white'>
+    <div className='bg-black py-10 lg:py-5 lg: px-4 lg:px-[7vw] lg:mt[vw] text-white'>
        <div className='lg:flex lg:items-center justify-between '>
        <div className='lg:flex lg:flex-col lg:justify-between lg:gap-6 '>
         <h1 className='text-[2.8em] font-medium'>Ayusynk</h1>
         <div className='links flex items-center gap-2 mt-2'>
           {socialIcons.map(({ icon, href }, idx) => (
-            <a key={idx} className='p-3 border-1 rounded-full' href={href}>
+            <a key={idx} className='p-3 lg:p-[.7vw] lg:hover:bg-[#0D6EFD] lg:transition lg:ease-in-out lg:3s border-1 rounded-full' href={href}>
               {icon}
             </a>
           ))}
@@ -164,8 +164,8 @@ const Footer = () => {
      
 
       <div className='copyright mt-5'>
-        <hr className='' />
-        <p className='text-center text-md mt-5'>
+        <hr className='text-[#464646]' />
+        <p className='text-center text-md mt-5 lg:mt-5'>
         Copyright 2025 Ayu Devices Pvt Ltd 
         </p>
       </div>

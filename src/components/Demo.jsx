@@ -2,7 +2,7 @@ import React from "react";
 
 const Demo = () => {
   return (
-    <div className="relative w-full px-4 lg:px-[5vw] lg:py-40 py-15 bg-black">
+    <div className="relative w-full px-4 lg:px-[5vw] lg:py-10 py-15 bg-black">
       <div>
         <img
           className="absolute top-10 right-1 lg:top-15 lg:right-[2vw]"
