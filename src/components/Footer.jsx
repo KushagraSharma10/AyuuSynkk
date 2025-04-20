@@ -120,8 +120,9 @@ const footerSections = [
 
 const Footer = () => {
   return (
-    <div className='bg-black py-10 px-4 text-white'>
-      <div>
+    <div className='bg-black py-10 lg: px-4 lg:px-[7vw] lg:mt[vw] text-white'>
+       <div className='lg:flex lg:items-center justify-between '>
+       <div className='lg:flex lg:flex-col lg:justify-between lg:gap-6 '>
         <h1 className='text-[2.8em] font-medium'>Ayusynk</h1>
         <div className='links flex items-center gap-2 mt-2'>
           {socialIcons.map(({ icon, href }, idx) => (
@@ -130,35 +131,37 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <div className='flex items-center justify-between gap-4 mt-13'>
+        <div className='flex lg:flex-col lg:items-start items-center justify-between gap-4 mt-13'>
           {appStoreLinks.map(({ href, src }, idx) => (
-            <a key={idx} className='w-[45vw]' href={href}>
+            <a key={idx} className='w-[45vw] lg:w-[10vw]' href={href}>
               <img className='w-full' src={src} alt='' />
             </a>
           ))}
         </div>
       </div>
 
-      <div className='All-links mt-10'>
+      <div className='All-links mt-10 lg:mt-0 lg:flex lg:items-start lg:justify-between lg:gap-30 lg:w-[52vw]'>
         {footerSections.map(({ title, links, isPhoneSection }, idx) => (
-          <div key={idx} className={idx !== 0 ? 'mt-10' : ''}>
-            <h1 className='text-[1.3em] font-bold'>{title}</h1>
+          <div key={idx} className={idx !== 0 ? 'mt-10 lg:mt-0' : ''}>
+            <h1 className='text-[1.3em] lg:text-[1.6em] lg:whitespace-nowrap font-bold'>{title}</h1>
             <div className='sub-links flex flex-col mt-2 gap-3'>
               {isPhoneSection
                 ? links.map(({ text, underline }, i) => (
                     <a
                       key={i}
                       href=''
-                      className={underline ? 'underline' : ''}
+                      className={underline ? 'underline lg:text-[1.1em]' : 'lg:text-[1.1em]'}
                     >
                       {text}
                     </a>
                   ))
-                : links.map((text, i) => <a key={i} href=''>{text}</a>)}
+                : links.map((text, i) => <a key={i} href='' className='lg:text-[1.1em]'>{text}</a>)}
             </div>
           </div>
         ))}
       </div>
+        </div> 
+     
 
       <div className='copyright mt-5'>
         <hr className='' />
