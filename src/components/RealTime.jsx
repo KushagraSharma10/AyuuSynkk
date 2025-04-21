@@ -180,7 +180,7 @@ const RealTime = () => {
       <hr className="text-[#BEBEBE] mt-10" />
       <div className="scroll-main lg:mt-10 md:flex md:justify-between lg:flex lg:justify-between">
         
-        <div className="left hidden md:block md:w-[40vw] md-transparent md:h-[60vh] md:p-1 md:mt-10 lg:block lg:w-[35vw] bg-transparent lg:h-[60vh] overflow-y-auto lg:p-1 scrollbar-hide">
+        <div className="left hidden md:block md:w-[40vw] md-transparent md:h-[60vh] md:p-1 lg:mt-3 md:mt-10 lg:block lg:w-[35vw] bg-transparent lg:h-[60vh] overflow-y-auto lg:p-1 scrollbar-hide">
           {contentData.map((item, index) => (
             <div
               key={index}
@@ -190,28 +190,28 @@ const RealTime = () => {
                 activeContent === index
                   ? "bg-[#3271C3] text-white"
                   : "bg-transparent text-[#606060]"
-              } h-[15vh] md:h-[8vh] cursor-pointer`}
+              } h-[15vh] lg:h-[15vh] md:h-[8vh] cursor-pointer`}
               onClick={() => setActiveContent(index)}
             >
-              <h1 className="text-[2.4em] md:text-[1.4em] md:font-medium font-medium">{item.title}</h1>
+              <h1 className="text-[2.4em] lg:text-[2.4em] md:text-[1.4em] md:font-medium font-medium">{item.title}</h1>
             </div>
           ))}
         </div>
 
-        <div className="right hidden md:flex md:flex-col  w-[45vw] md:w-[50vw] p-10 lg:flex lg:flex-col justify-center items-start bg-transparent">
+        <div className="right hidden md:flex md:flex-col  w-[45vw] lg:w-[45vw] md:w-[50vw] p-10 lg:flex lg:flex-col justify-center items-start bg-transparent">
           <div
             key={activeContent}
             className="transition-opacity duration-300 animate-fadeIn"
           >
             <img
-              className="w-[7vw] md:w-[10vw]"
+              className="w-[7vw] lg:w-[7vw] md:w-[10vw]"
               src={contentData[activeContent].img}
               alt=""
             />
-            <h1 className="text-[3em] md:text-[2em] md:whitespace-nowrap font-medium mt-4 text-[#606060]">
+            <h1 className="text-[3em] lg:text-[3em] md:text-[2em] md:whitespace-nowrap font-medium mt-4 text-[#606060]">
               {contentData[activeContent].title}
             </h1>
-            <p className="text-[1.1em] md:text-[1em] md:font-medium md:text-start font-medium mt-3">
+            <p className="text-[1.1em] lg:text-[1.1em] md:text-[1em] md:font-medium md:text-start font-medium mt-3">
               {contentData[activeContent].desc}
             </p>
           </div>

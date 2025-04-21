@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <div className="w-full px-4  py-10 h-[109.91vw]  lg:h-[53.9vw] md:h-[65vw] lg:bg-black bg-black relative">
-      <h1 className="lg:absolute md:absolute md:top-[18vw] md:left-[6vw] md:leading-[8vw] md:font-medium lg:top-[18vw] md:w-[72vw] lg:w-[35.5vw] lg:left-[7vw] lg:bg-transparent lg:text-[2.9em] md:text-[3em] text-[1.8em] text-white font-medium z-2">
+      <h1 className="lg:absolute md:absolute md:top-[18vw] md:left-[6vw] lg:leading-[5vw] md:leading-[8vw] md:font-medium lg:top-[18vw] md:w-[72vw] lg:w-[35.5vw] lg:left-[7vw] lg:bg-transparent lg:text-[2.9em] md:text-[3em] text-[1.8em] text-white font-medium z-2">
         Experience the future of precision monitoring with{" "}
         <span className="text-[rgb(50,113,195)]">AyuSynk</span>
       </h1>
