@@ -238,7 +238,7 @@ const Testimonial = () => {
           {testimonials.map((testimonial) => (
             <SwiperSlide key={testimonial.id}>
               <div className="w-full lg:w-[96vw] md:w-[96vw] flex-shrink-0  px-1">
-                <div className="h-[80vh] lg:h-[70vh] md:h-[70vh] px-5 py-10 md:rounded-[5vw] rounded-lg lg:rounded-[4vw] lg:px-50 bg-[#F2F2F2] flex flex-col items-center gap-5">
+                <div className="h-[80vh] lg:h-[70vh] md:h-[70vh] px-5 py-10 md:rounded-[5vw] rounded-[6vw] lg:rounded-[4vw] lg:px-50 bg-[#F2F2F2] flex flex-col items-center gap-5">
                   <h1 className="text-[1.3em] font-semibold lg:text-[1.5em]">Testimonial</h1>
                   <p className="text-[1em] font-medium text-center md:text-[1.5em] lg:mt-5 lg:text-[1.5em]">
                     "{testimonial.content}"
