@@ -5,17 +5,17 @@ const Demo = () => {
     <div className="relative w-full px-4 lg:px-[5vw] lg:py-10 py-15 bg-black">
       <div>
         <img
-          className="absolute top-10 right-1 lg:top-15 lg:right-[2vw]"
+          className="absolute top-10 right-1 lg:top-10 lg:right-[2vw]"
           src="https://www.ayusynk.ai/wp-content/uploads/2024/07/ellipse1-1.png"
           alt=""
         />
         <img
-          className="absolute top-18 right-1 lg:top-33 lg:right-[8vw]"
+          className="absolute top-18 right-1 lg:top-25 lg:right-[8vw]"
           src="https://www.ayusynk.ai/wp-content/uploads/2024/07/ellipse2-1.png"
           alt=""
         />
         <img
-          className="absolute top-25 right-1 lg:top-47  lg:right-[12vw]"
+          className="absolute top-25 right-1 lg:top-40  lg:right-[12vw]"
           src="https://www.ayusynk.ai/wp-content/uploads/2024/07/ellipse3-1.png"
           alt=""
         />
@@ -26,7 +26,7 @@ const Demo = () => {
         />
       </div>
       <div className="flex flex-col gap-10 lg:gap-5 lg:mt-[-1.5vw] mt-3 items-center justify-center ">
-        <div className="flex flex-col items-center justify-center ">
+        <div className="flex lg:mt-[5vw] flex-col items-center justify-center ">
           <img
             src="https://www.ayusynk.ai/wp-content/uploads/2024/07/t-logo.png"
             alt=""
